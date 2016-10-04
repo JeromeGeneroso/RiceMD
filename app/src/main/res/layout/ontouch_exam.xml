@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mlabs.bbm.firstandroidapp.OnTouchExam">
+
+    <ImageView
+        android:layout_width="2.5in"
+        android:layout_height="1.5in"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/eye"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X1,Y1"
+        android:id="@+id/textView"
+        android:layout_alignBaseline="@+id/x1y1Txt"
+        android:layout_alignBottom="@+id/x1y1Txt"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X2,Y2"
+        android:id="@+id/textView5"
+        android:layout_alignBaseline="@+id/x2y2Txt"
+        android:layout_alignBottom="@+id/x2y2Txt"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diff X,Y"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/diffxyTxt"
+        android:layout_alignBottom="@+id/diffxyTxt"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motion"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/MotionTxt"
+        android:layout_alignBottom="@+id/MotionTxt"
+     />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quadrant"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/QuadrantTxt"
+        android:layout_alignBottom="@+id/QuadrantTxt"
+       />
+
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/x1y1Txt"
+        android:editable="false"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/x2y2Txt"
+        android:editable="false"
+        android:layout_below="@+id/x1y1Txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/diffxyTxt"
+        android:editable="false"
+        android:layout_below="@+id/x2y2Txt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/MotionTxt"
+        android:editable="false"
+        android:layout_below="@+id/diffxyTxt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="1.5in"
+        android:layout_height="wrap_content"
+        android:id="@+id/QuadrantTxt"
+        android:editable="false"
+        android:layout_below="@+id/MotionTxt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
